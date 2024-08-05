@@ -9,14 +9,215 @@
 		<meta name="description" content="This is a basic index template; therefore, the content of this tag will need to be updated later.">
 
 		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<script src="js/main.js" defer=""></script>
+		
 	</head>
 	<body>
-		<div class="container">
-			<h1>Hello, world!</h1>
-		</div>
+		<header>
+			<div class="inner-container wide-flex">
+				<div class="flex-container">
+					<h1>
+						<a href="index.html">Blog</a>
+					</h1>
+					<div class="toggle-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+						  </svg>						
+						  <p>menu o</p>
+					</div>
+				</div>
+				<nav class="wide-flex">
+					<h2 class="sr-only">Main Menu</h2>
+					<ul class="main-menu">
+						<li>
+							<a href="#" id="about-link" class="first-link">
+								About
+								<img src="img/svg/chevron.svg" alt="Down Arrow Icon">
+							</a>
+							<ul class="second-tier">
+								<li id="bio">
+									<a href="#">Bio</a>
+								</li>
+								<li id="services">
+									<a href="#">Services</a>
+								</li>
+								<li id="media">
+									<a href="#">In The Media</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="first-link">
+								Things to Do
+								<img src="img/svg/chevron.svg" alt="Down Arrow Icon">
+							</a>
+							<ul class="second-tier">
+								<li id="good-food">
+									<a href="#">Good Food</a>
+								</li>
+								<li id="local-travel">
+									<a href="#">Local Travel</a>
+								</li>
+								<li id="arts-culture">
+									<a href="#">Arts & Culture</a>
+								</li>
+								<li id="family">
+									<a href="#">Family</a>
+								</li>
+								<li id="festivals">
+									<a href="#">Festivals</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="first-link">
+								Contact
+								<img src="img/svg/chevron.svg" alt="Down Arrow Icon">
+							</a>
+							<ul class="second-tier">
+								<li id="video-blog">
+									<a href="#">Video Blog</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="food-section">
+				<div class="food-title">
+				    <h2>
+						<span class="good">Good</span> 
+						<span class="food">Food</span>
+					</h2>
+				    <p>I love to eat! Check out some dishes I've tried and restaurants I recommend you try.</p>
+				    <button>Discover</button>
+			    </div>
+				<div class="photo-container">
+					<img src="img/svg/good.png" alt="breakfast">
+					<img src="img/svg/food.png" alt="dinner">
+				</div>
+			</section>
+			<section class="local-section">
+				<div class="local-title">
+					<h2>
+						<span class="local">Local</span> 
+						<span class="travel">Travel</span>
+					</h2>
+				    <button>Discover</button>
+			    </div>
+				<div class="travel-image">
+					<img src="img/svg/mountains.png" alt="mountains">
+				</div>
+			</section>
+			<section class="stuff-section">
+				<img class="heart" src="img/svg/heart.svg" alt="heart">
+				<h2>Stuff</h2>
+				<div class="stuff-div">
+					<img src="img/svg/taco.png" alt="tacos">
+					<h3>Fresh Prep</h3>
+					<p>Sign up today to enjoy the Fresh Prep difference. Enjoy a more convenient and quality meal kit service delivered to your door.</p>
+					<br>
+					<p>Use our discount code for 10% off your first purchase.</p>
+					<br>
+					<a href="#">VISIT FRESH PREP</a>
+				</div>
+				<div class="stuff-div">
+					<img src="img/svg/farmer.png" alt="market">
+					<h3>Farmers' Market</h3>
+					<p>Edmontonians love farmers' markets and you should too. You'll find everything from fresh local produce to hand-made jewellery, clothing, art and unique home goods. There is a market for every part of the city, and we've got you covered with this list of favourites.</p>
+					<br>
+					<a href="#">CHECKOUT THE LIST</a>
+				</div>
+				<div class="stuff-div">
+					<img src="img/svg/inside.png" alt="cabin">
+					<h3>Cabin Brewery</h3>
+					<p>Our brewery has a bright and family-friendly tasting room, a retail area and small patio, open 6 days a week.</p>
+					<br>
+					<p>We are super proud of our beautiful brewery and love to show it off. Book a tour to learn more about where we came from and how we make our delicious beer.</p>
+					<br>
+					<a href="#">BOOK A TOUR</a>
+				</div>
+				<div class="stuff-div">
+					<img src="img/svg/chocolate.png" alt="mug">
+					<h3>Hot Chocolate Bombs</h3>
+					<p>Hot Chocolate Bombs are chocolate spheres filled with homemade chocolate milk powder and marshmallows that are put into a mug with hot milk for a delicious cup of hot cocoa. Try my Best Homemade Hot Cocoa for another rich and creamy hot chocolate recipe.</p>
+					<br>
+					<a href="#">MAKE THIS RECIPE</a>
+				</div>
+			</section>
+			<section class="video-section">
+				<div class="video-div">
+				    <h2>
+						<span class="video">Video</span> 
+						<span class="blog">Blog</span>
+					</h2>
+				    <p>Follow me on my YouTube channel to get news, discounts and more.</p>
+				    <button>Discover</button>
+			    </div>
+				<div>
+				    <img src="img/svg/camera.png" alt="camera">
+			    </div>
+			</section>
+		</main>
+		<footer>
+			<nav>
+				<ul class="footer-ul">
+					<li class="footer-title">
+						<a href="#">About</a>
+					</li>
+					<li class="footer-p">
+						<a href="#">Bio</a>
+					</li>
+					<li class="footer-p">
+						<a href="#">Services</a>
+					</li>
+					<li class="footer-p">
+						<a href="#">In The Media</a>
+					</li>
+				</ul>
+				<ul class="footer-ul">
+					<li class="footer-title">
+						<a href="#">Things to Do</a>
+                    </li>
+					<li class="footer-p">
+						<a href="#">Good Food</a>
+					</li>
+					<li class="footer-p">
+						<a href="#">Local Travel</a>
+					</li>
+					<li class="footer-p">
+						<a href="#">Arts & Culture</a>
+					</li>
+					<li class="footer-p">
+						<a href="#">Family</a>
+					</li>
+					<li class="footer-p">
+						<a href="#">Festivals</a>
+					</li>
+                </ul>
+				<ul class="footer-ul">
+					<li class="footer-title">
+						<a href="#">Contact</a>
+					</li>
+					<li class="footer-p">
+						<a href="#">Video Blog</a>
+					</li>
+				</ul>
+				<img src="img/svg/facebook.svg" alt="facebook" class="facebook-icon">
+				<img src="img/svg/instagram.svg" alt="instagram" class="instagram-icon">
+				<img src="img/svg/youtube.svg" alt="youtube" class="youtube-icon">
+				<img src="img/svg/linkedin.svg" alt="linkedin" class="linkedin-icon">
+			</nav>
+		</footer>
 	</body>
 </html>

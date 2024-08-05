@@ -1,0 +1,703 @@
+/* Header */
+.flex-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.inner-container {
+    margin: auto;
+    max-width: 48rem;
+}
+header .inner-container {
+    padding: unset;
+    margin-left: 0rem;
+    margin-right: 0;
+}
+.sr-only {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+}
+header a {
+    color: #fff;
+}
+.first-link{
+    text-decoration: none;
+}
+h1 {
+    font-size: 3.5rem;
+    font-family: "Cooper Hewitt", sans-serif;
+}
+h1 a{
+    font-weight: normal;
+    text-decoration: none;
+}
+header ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+header {
+    background-color: #3a3a3a;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    position: relative;
+    top: 0;
+    z-index: 100;
+}
+.first-link {
+    font-weight: 600;
+    font-family: "Cooper Hewitt", sans-serif;
+}
+.second-tier{
+    font-weight: 300;
+    font-family: "Merriweather Sans", sans-serif;
+}
+.first-link:hover {
+    color: #518315;
+}
+.first-link.active {
+    color: #518315;
+}
+.second-tier li:hover{
+    background-color: #6a6a6a;
+}
+.second-tier li.active{
+    background-color: #6a6a6a;
+}
+svg,
+header img {
+    max-width: 3rem;
+}
+.toggle-btn {
+    color: #fff;
+}
+.toggle-btn p{
+    color: #3a3a3a;
+}
+.first-link {
+    font-size: 2.2rem;
+}
+.first-link img {
+    width: 1rem;
+}
+.first-link img,
+a span {
+    display: none;
+}
+nav li a {
+    display: block;
+    padding: 0.5rem 0;
+}
+/* Good Food */
+.food-section{
+    display: flex;
+    height: 40rem;
+}
+.food-title{
+    width: 21rem;
+    margin: 10rem -7rem 1rem 19rem;
+}
+.food-title h2{
+    line-height: 4.5rem;
+    text-align: center;
+    margin-left: 1rem;
+    font-family: "Cooper Hewitt", sans-serif;
+    font-weight: 900;
+}
+.food-title p {
+    font-weight: 600;
+    margin: 1rem 0rem 0.5rem 2rem;
+    width: 30rem;
+    font-size: 1.25rem;
+    line-height: normal;
+    font-family: "Merriweather Sans", sans-serif;
+}
+h2 .good {
+    color: #404040;
+    font-size: 9.5rem;
+}
+h2 .food {
+    color: #707070;
+    font-size: 7rem;
+    margin-left: 4rem;
+}
+.food-title button{
+    border-radius: 2rem;
+    width: 11rem;
+    height: 2.5rem;
+    background-color: #404040;
+    border: none;
+    margin-left: 2rem;
+    color: #f2f2f2;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-family: "MerriweatherSansRoman", sans-serif;
+}
+.food-title button:hover{
+    background-color: rgb(218, 87, 0);
+}
+.photo-container {
+    height: 32rem;
+    position: relative;
+}
+.photo-container img {
+    position: absolute;
+}
+.photo-container img:first-of-type {
+    top: 2rem;
+    left: 45rem;
+    max-width: 25rem;
+}
+.photo-container img:last-of-type {
+    top: 15.95rem;
+    left: 33.75rem;
+    max-width: 30rem;
+}
+/* Local Travel */
+.local-section{
+    display: flex;
+    height: 27rem;
+    background-color: #f2f2f2;
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+}
+.local-title h2{
+    display: grid;
+    font-family: "Cooper Hewitt", sans-serif;
+    font-weight: 900;
+}
+h2 .local {
+    color: #727812;
+    font-size: 9.5rem;
+    margin: 1.75rem 0rem 0rem 3rem;
+}
+h2 .travel {
+    color: #707070;
+    font-size: 7rem;
+    margin: -5.25rem 0rem 0rem 26rem;
+}
+.local-title button{
+    border-radius: 2rem;
+    width: 11rem;
+    height: 2.5rem;
+    background-color: #404040;
+    border: none;
+    margin-left: 30.5rem;
+    color: #f2f2f2;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-family: "MerriweatherSansRoman", sans-serif;
+}
+.local-title button:hover{
+    background-color: rgb(218, 87, 0);
+}
+.travel-image{
+    margin-top: -6.5rem;
+    padding-left: 20rem;
+}
+/* Stuff */
+.stuff-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.stuff-section {
+    position: relative;
+}
+.heart {
+    width: 5rem;
+    position: absolute;
+    top: 3rem;
+    left: 15rem;
+    z-index: 1;
+}
+.stuff-section h2 {
+    margin-left: 15rem;
+    width: 100%;
+    color: #404040;
+    font-size: 9rem;
+    position: relative;
+    z-index: 0;
+    font-family: "Cooper Hewitt", sans-serif;
+    font-weight: 900;
+}
+.stuff-div {
+    flex: 1 1 23%;
+    box-sizing: border-box;
+    padding: 85px;
+    background-color: #f2f2f2;
+    height: 31rem;
+    margin-bottom: 32rem;
+    max-width: 100%;
+    width: 4rem;
+}
+.stuff-div p{
+    width: 17.5rem;
+    font-size: 1.1rem;
+    color: #404040;
+    font-family: "Merriweather Sans", sans-serif;
+}
+.stuff-div h3{
+    color: #b29124;
+    font-size: 2.75rem;
+    width: 14rem;
+    line-height: 2.5rem;
+    margin: 2rem 0rem 0.8rem;
+    font-family: "Cooper Hewitt", sans-serif;
+    font-weight: 900;
+}
+.stuff-div img{
+    margin-top: -3rem;
+}
+.stuff-section a {
+    display: block;
+    margin-top: 10px;
+    color: #404040;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.15rem;
+}
+.stuff-div a:hover{
+    color: rgb(218, 87, 0);
+}
+/* Video Blog */
+.video-section{
+    display: flex;
+    height: 35rem;
+    width: 89.5rem;
+    background-color: #404040;
+    margin: 6rem 0rem 4rem 2.5rem;
+}
+h2 .video {
+    color: #f2f2f2;
+    font-size: 9.5rem;
+}
+h2 .blog {
+    color: #f2f2f2;
+    font-size: 7rem;
+}
+.video-div{
+    display: grid;
+    line-height: 2rem;
+}
+.video-div h2{
+    display: grid;
+    line-height: 4rem;
+    margin: 5.5rem 0rem 0rem 30rem;
+    font-family: "Cooper Hewitt", sans-serif;
+    font-weight: 900;
+}
+.video-div p{
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    width: 30rem;
+    margin-left: 35rem;
+    font-family: "Merriweather Sans", sans-serif;
+}
+.video-div button {
+    border-radius: 3rem;
+    width: 15rem;
+    height: 3.5rem;
+    background-color: #f2f2f2;
+    border: none;
+    margin-left: 35rem;
+    margin-top: -3.5rem;
+    color: #404040;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-family: "MerriweatherSansRoman", sans-serif;
+}
+.video-div button:hover{
+    background-color: rgb(218, 87, 0);
+    color: #f2f2f2;
+}
+.video-section img{
+    width: 35rem;
+    margin-left: 8rem;
+    max-width: 60rem;
+    margin-top: 6rem;
+}
+/* Footer */
+footer {
+    background-color: #3a3a3a;
+    color: #fff;
+    height: 18rem;
+}
+.footer-title{
+    font-family: "MerriweatherSansRoman", sans-serif;
+}
+.footer-p a {
+    color: #cbc9c9;
+    text-decoration: none;
+}
+.footer-p{
+    font-family: "Merriweather Sans", sans-serif;
+}
+.footer-title a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+footer nav {
+    display: flex;
+}
+.footer-ul {
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 0.5rem;
+    font-size: 1.25rem;
+    margin-right: 7rem;
+    padding-top: 3rem;
+}
+.footer-ul li{
+    list-style-type: none;
+}
+footer img {
+    width: 2rem;
+    margin: -5rem 0px 0 1rem;
+}
+footer a:hover {
+    color: #518315;
+}
+.facebook-icon:hover {
+    filter: invert(66%) sepia(97%) saturate(2128%) hue-rotate(85deg) brightness(71%) contrast(73%);
+}
+.instagram-icon:hover {
+    filter: invert(66%) sepia(97%) saturate(2128%) hue-rotate(85deg) brightness(71%) contrast(73%);
+}
+.youtube-icon:hover {
+    filter: invert(66%) sepia(97%) saturate(2128%) hue-rotate(85deg) brightness(71%) contrast(73%);
+}
+.linkedin-icon:hover {
+    filter: invert(66%) sepia(97%) saturate(2128%) hue-rotate(85deg) brightness(71%) contrast(73%);
+}
+@media screen and (min-width: 1351px) {
+    header{
+        width: 100%;
+    }
+    .wide-flex{
+        margin-left: 65rem;
+    }
+}
+@media screen and (min-width: 821px) and (max-width: 1350px) {
+    .first-link {
+        font-size: 2.2rem;
+    }
+    .main-menu {
+        padding-left: 35rem;
+    }
+    .food-title {
+        width: 21rem;
+        margin: 4rem -20rem 1rem 9rem;
+    }
+    .food-title h2 {
+        text-align: right;
+    }
+    .food-title p {
+        width: 28rem;
+        font-size: 1.45rem;
+        margin-left: 0rem;
+    }
+    h2 .good {
+        font-size: 7rem;
+        margin-right: 4rem;
+    }
+    .local-title h2 {
+        line-height: 13.25rem;
+    }
+    .photo-container img:first-of-type {
+        left: 36.25rem;
+        max-width: 75rem;
+        width: 32rem;
+    }
+    .photo-container img:last-of-type {
+        top: 20.5rem;
+        left: 30rem;
+        max-width: 35rem;
+        width: 31rem;
+    }
+    .food-section {
+        height: 45rem;
+    }
+    .local-section {
+        height: 29rem;
+        margin-top: 0rem;
+    }
+    h2 .local{
+        margin-left: 7rem;
+    }
+    h2 .travel {
+        margin-left: 13rem;
+        font-size: 9rem;
+    }
+    .local-title button {
+        border-radius: 2rem;
+        width: 13rem;
+        height: 3.5rem;
+        margin-left: 25.5rem;
+        margin-top: -2rem;
+    }
+    .travel-image {
+        margin-top: 1.5rem;
+        padding-left: 8.5rem;
+    }
+    .heart {
+        left: 10rem;
+    }
+    .stuff-section h2{
+        margin-left: 10rem;
+        font-size: 10rem;
+    }
+    .stuff-div img{
+        max-width: 100%;
+        width: 29rem;
+    }
+    .stuff-div {
+        flex: 1 1 48%;
+        height: 49.5rem;
+    }
+    .stuff-div h3{
+        font-size: 3.75rem;
+        width: 25rem;
+        line-height: 3.5rem;
+    }
+    .stuff-div p {
+        width: 34rem;
+        font-size: 1.8rem;
+    }
+    .stuff-section a {
+        font-size: 1.8rem;
+    }
+    .video-section{
+        width: 60rem;
+    }
+    .video-div{
+        margin-left: -25rem;
+    }
+    .video-section img {
+        width: 31rem;
+        margin-left: 4rem;
+    }
+    .footer-ul {
+        margin-right: 3rem;
+    }
+}
+@media screen and (max-width: 821px) {
+    header nav {
+        background-color: #3a3a3a;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+    }
+    .open-menu {
+        max-height: unset;
+        overflow: visible;
+        border-bottom: 1px solid #fff;
+        text-align: right;
+        padding-right: 2rem;
+    }
+    .first-link {
+        text-align: right;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    header ul {
+        font-size: 1.5rem;
+    }  
+    .food-section{
+        display: grid;
+    }
+    h2 .good {
+        font-size: 9rem;
+    }
+    h2 .food {
+        font-size: 9rem;
+        margin-left: 5rem;
+    }
+    .food-title {
+        margin: 3rem -5rem 1rem 9rem;
+    }
+    .food-title h2{
+        line-height: 5rem;
+    }
+    .food-title p{
+        width: 30rem;
+        font-size: 1.75rem;
+    }
+    .food-title button{
+        width: 11rem;
+        height: 3.5rem;
+    }
+    .food-section {
+        height: 85rem;
+    }
+    .photo-container{
+        margin-left: -31rem;
+        margin-top: 2rem;
+    }
+    .photo-container img:first-of-type {
+        max-width: 70rem;
+        width: 34rem;
+    }
+    .photo-container img:last-of-type {
+        top: 20.95rem;
+        left: 38.75rem;
+        max-width: 29rem;
+    }
+    .food-section {
+        height: 45rem;
+    }
+    .local-section {
+        height: 78rem;
+        margin-top: 32rem;
+        display: grid;
+    }
+    h2 .local{
+        margin-left: 4rem;
+        font-size: 10rem;
+    }
+    h2 .travel {
+        margin-left: 12.25rem;
+        font-size: 10rem;
+    }
+    .local-title button {
+        border-radius: 3rem;
+        width: 16rem;
+        height: 4rem;
+        margin-left: 21.5rem;
+    }
+    .travel-image {
+        margin-top: 1.5rem;
+        padding-left: 11.25rem;
+    }
+    .heart {
+        left: 12rem;
+    }
+    .stuff-section h2{
+        font-size: 9rem;
+        margin-left: 13rem;
+    }
+    .stuff-div img{
+        max-width: 100%;
+        width: 37rem;
+    }
+    .stuff-div {
+        flex: 1 1 48%;
+        height: 62rem;
+    }
+    .stuff-div h3{
+        font-size: 5.5rem;
+        width: 28rem;
+        line-height: 5.5rem;
+    }
+    .stuff-div p {
+        width: 36rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .stuff-section a {
+        font-size: 1.8rem;
+    }
+    .stuff-div {
+        flex: 1 1 100%;
+        height: 63rem;
+        margin-top: 2rem;
+    }
+    .video-section{
+        display: grid;
+        width: 46rem;
+        height: 60rem;
+        margin-top: 7rem;
+    }
+    .video-section img {
+        width: 46rem;
+        margin-left: 0rem;
+        margin-top: -2rem;
+    }
+    .video-div {
+        line-height: 2rem;
+        height: 36rem;
+        margin-left: -26rem;
+    }
+    .video-div button {
+        margin-left: 50rem;
+    }
+    footer{
+        height: 24rem;
+        margin-top: 8rem;
+    }  
+    footer nav {
+        flex-wrap: wrap;
+    }
+    .footer-ul {
+        flex: 0 1 45%;
+        margin: 0;
+    }
+    footer img {
+        height: 1.5rem;
+    }
+    nav img {
+        margin: 2.5rem 1rem 0rem 0rem;
+    }
+    
+}
+@media screen and (min-width: 821px) {
+    .wide-flex {
+        align-items: flex-start;
+        display: flex;
+    }
+    header .inner-container {
+        max-width: 114rem;
+    }
+    .toggle-btn {
+        display: none;
+    }
+    .first-link img,
+    a span {
+        display: unset;
+    }
+    .members {
+        border-top: none;
+        margin: 0;
+        padding-top: 0;
+    }
+    .main-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+    .main-menu li {
+        position: relative;
+    }
+    .main-menu > li {
+        margin: 0 1rem;
+    }
+    .second-tier,
+    .third-tier {
+        background-color: #3a3a3a;
+        min-width: 100%;
+        padding: 1rem;
+        position: absolute;
+        white-space: nowrap;
+        visibility: hidden;
+    }
+    .second-tier {
+        left: 0;
+        text-align: center;
+    }
+    .third-tier {
+        left: 100%;
+        text-align: left;
+        top: -1rem;
+    }
+    .main-menu li:hover > .second-tier,
+    .second-tier li:hover > .third-tier {
+        visibility: visible;
+    }
+}
